@@ -97,7 +97,9 @@ passport.deserializeUser(user.deserializeUser())
  app.use("/term", pagerouter)
  app.use("/",userrouter)
  
-
+app.get("/",(req,res)=>{
+    res.redirect("/listings")
+})
 
 
 
