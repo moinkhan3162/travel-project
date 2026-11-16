@@ -1,0 +1,84 @@
+@media(max-width: 440px){
+html, body {
+    width: 100% !important;
+}
+.container {
+    flex: 1 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+}
+   
+   
+
+
+.show-card{
+ width: 70%!important;
+display: flex !important;
+
+justify-content: center !important;
+align-items: center !important;
+margin: auto !important;
+
+}
+.show-title{
+    width: 75% !important;
+    display: flex !important;
+   margin-left: 40px !important;
+    align-items: center !important;
+    padding-left: 20px !important;
+}
+.container{
+    
+    flex: 1 !important;
+   width: 100% !important;
+}
+
+.show-img{
+        width: 100% !important;
+       border-radius:15px 15px 15px 15px !important ;
+        object-fit: cover !important;
+    }
+.btn-info{
+    width: 70px !important;
+}
+.review-cd{
+    display: flex !important;
+    width: 100% !important;
+    flex-direction:start ;
+    align-items: center !important;
+    align-content: center;
+    flex-wrap: wrap !important;
+    margin: 0 !important;
+}
+.review-card{
+    width: 100% !important;
+}
+.card-w{
+    width: 50% !important;
+}
+
+
+#map { 
+   height: 300px !important;
+   width: 70% !important;
+   margin-bottom: 10px !important;
+   border-radius: 5px !important;
+   margin-top: 15px !important;
+ }
+ .maps{
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin: 0 !important;
+ }
+ .map-heading{
+    width: 50% !important;
+ }
+.category-lable{
+    display: none !important;
+}
+.full{
+    width: 100% !important;
+}
+}

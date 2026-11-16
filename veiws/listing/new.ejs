@@ -1,0 +1,71 @@
+<% layout("./layouts/boilerplate") %>
+<body >
+   
+    <div class="row col-8 offset-2 con">
+
+    <form   class=" needs-validation" method="post" action="/listings" novalidate enctype="multipart/form-data">
+        <div class="mb-3 mt-3">
+            <label for="title" class="form-label">titel:</label>
+            <input name="listing[title]" placeholder="enter title" type="text" class="form-control" id="title" required>
+            <div class="invalid-feedback"> please enter title</div>
+        </div>
+        
+         <div class="mb-3">
+            <label for="d" class="form-label">description:</label>
+            <textarea name="listing[description]" placeholder="write descrition" cols="80" rows="3s" id="d" class="form-control" required></textarea>
+            <div class="invalid-feedback"> please write description</div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="image" class="form-label">image:</label>
+            <input name="listing[image]"  type="file" id="image" class="form-control  required" >
+          
+        </div><br>
+         
+        
+<div class="input-group mb-3 row row-cols-lg-8 row-cols-md-2 row-cols-sm-1">
+  <select class="form-select" name="listing[category]" id="inputGroupSelect02">
+   
+    <option value="">Choose Category</option>
+    <option value="trendings">Trendings</option>
+    <option value="luxary">Luxary Hotels</option>
+    <option value="prime cities">Prime Cities</option>
+    <option value="sea view">Sea View</option>
+    <option value="mountains">mountains</option>
+    <option value="3 star hotels">3 star hotels</option>
+     <option value="boating">boating</option>
+      <option value="snow cities">snow cities</option>
+
+  </select>
+  <label class="input-group-text category-lable" for="inputGroupSelect02"> category Options</label>
+</div><br>
+
+        <div class="row">
+        <div class="mb-3 full col-4">
+            <label for="price" class="form-label">price:</label>
+            <input name="listing[price]" placeholder="enter price" type="number" id="price" class="form-control"required>
+            <div class="invalid-feedback"> please enter valide price</div>
+        </div>
+         <div  class="mb-3 full col-7">
+            <label for="country" class="form-label">country:</label>
+            <input name="listing[country]" placeholder="india nepal america" type="text" id="country" class="form-control" required>
+            <div class="invalid-feedback">please enter your country</div>
+        </div>
+        
+    </div>
+       
+
+    <div class="mb-3">
+            <label for="location" class="form-label">location:</label>
+           <input name="listing[location]" placeholder="mumbai  us  uttarpardash" type="text" id="location" class="form-control" required>
+           <div class="invalid-feedback"> please enter your location</div>
+        </div>
+        
+       
+        
+    
+    
+        <button class="btn btn-info mb-5">submit</button>
+    </form>
+    </div>
+</body>
